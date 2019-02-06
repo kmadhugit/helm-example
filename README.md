@@ -31,8 +31,7 @@ service:
 ```
 
 ## upgrade a release ( installing a chart creates a release i.e running instane of chart)
-(Assuming sweet-chicken is release name auto allocated)
-* helm ls ## to get the release name of our chart
+* To get the release name of our chart run helm ls. It gave sweet-chicken for me.
 * helm get values sweet-chicken
 * helm upgrade --set appname=orang --set container.port=9000 --set service.port=8000 sweet-chicken hello-service-chart
 

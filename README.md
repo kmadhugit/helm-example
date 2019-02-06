@@ -31,8 +31,7 @@ service:
 ```
 
 ## upgrade a release ( installing a chart creates a release i.e running instane of chart)
-(Assuming sweet-chicken is release name auto allocated)
-* helm ls ## to get the release name of our chart
+* To get the release name of our chart run helm ls. It gave sweet-chicken for me.
 * helm get values sweet-chicken
 * helm upgrade --set appname=orang --set container.port=9000 --set service.port=8000 sweet-chicken hello-service-chart
 
@@ -53,7 +52,7 @@ rollback to revision 2
 
 ## publishing
 
-* create a github repo go to settings and enable pages and get the webpage URL. 
+* create a github repo go to settings and enable pages and get the webpage URL. Repo is nothing but a simple webserver which would server tar binary of the package and index.yaml. The index.yaml contains the name of the chart and location of tar file. View the one here..
 * https://kmadhugit.github.io/helm-repository/
 * git clone repo
 * copy *.tgz to the repository
@@ -61,6 +60,12 @@ rollback to revision 2
 * vi index.yaml
 * git commit 
 * git push
-* helm install 
+
+## add it to helm repo list
+* curl https://kmadhugit.github.io/helm-repository/index.yaml
+* helm repo add my-helm-repo https://kmadhugit.github.io/helm-repository/
+* helm repo list
+* helm search hello-service
+* helm install my-helm-repo/hello-service-chart
 
 

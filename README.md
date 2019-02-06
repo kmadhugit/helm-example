@@ -61,6 +61,12 @@ rollback to revision 2
 * vi index.yaml
 * git commit 
 * git push
-* helm install 
+
+## add it to helm repo list
+* curl https://kmadhugit.github.io/helm-repository/index.yaml
+* helm repo add my-helm-repo https://kmadhugit.github.io/helm-repository/
+* helm repo list
+* helm search hello-service
+* helm install my-helm-repo/hello-service-chart
 
 

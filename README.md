@@ -52,7 +52,7 @@ rollback to revision 2
 
 ## publishing
 
-* create a github repo go to settings and enable pages and get the webpage URL. 
+* create a github repo go to settings and enable pages and get the webpage URL. Repo is nothing but a simple webserver which would server tar binary of the package and index.yaml. The index.yaml contains the name of the chart and location of tar file. View the one here..
 * https://kmadhugit.github.io/helm-repository/
 * git clone repo
 * copy *.tgz to the repository

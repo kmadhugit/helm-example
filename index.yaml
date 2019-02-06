@@ -3,20 +3,11 @@ entries:
   hello-service-chart:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-06T20:15:58.106973+05:30
-    description: A Helm chart for Kubernetes
-    digest: 105ee8352c92a83d21def708b81ac4580ad276340ce78b71db3ec3c4ba9a18b8
+    created: 2019-02-06T20:22:10.282612+05:30
+    description: Simple hello micro service
+    digest: dd8f00ad711a48d70854ab6dad9f9574c813b9ca2d8ff452657035d4aa27de4a
     name: hello-service-chart
     urls:
     - https://kmadhugit.github.io/helm-repository/hello-service-chart-0.1.1.tgz
     version: 0.1.1
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-02-06T20:15:58.106623+05:30
-    description: A Helm chart for Kubernetes
-    digest: 33e782b0b231870ed1cc99e03d4e34ebb8d7ed24fe3b6a35f1ce9889209291f8
-    name: hello-service-chart
-    urls:
-    - https://kmadhugit.github.io/helm-repository/hello-service-chart-0.1.0.tgz
-    version: 0.1.0
-generated: 2019-02-06T20:15:58.105064+05:30
+generated: 2019-02-06T20:22:10.282254+05:30

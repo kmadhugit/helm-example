@@ -1,13 +1,23 @@
 apiVersion: v1
 entries:
-  hello-service-chart:
+  helm-hello-service:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-06T20:22:10.282612+05:30
+    created: 2019-02-07T13:24:09.897269+05:30
     description: Simple hello micro service
-    digest: dd8f00ad711a48d70854ab6dad9f9574c813b9ca2d8ff452657035d4aa27de4a
-    name: hello-service-chart
+    digest: ecdba2bdb8070324578687a22de256a04d6ad422b08c6a606fec02bd05662863
+    name: helm-hello-service
     urls:
-    - https://kmadhugit.github.io/helm-repository/hello-service-chart-0.1.1.tgz
-    version: 0.1.1
-generated: 2019-02-06T20:22:10.282254+05:30
+    - https://kmadhugit.github.io/helm-repository/helm-hello-service-0.1.tgz
+    version: "0.1"
+  helm-ingress-example:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-02-07T13:24:09.897753+05:30
+    description: Helm Ingress Example
+    digest: bb130fc78a937da5147bc1c4f5a6b694ae12632fe26653e50b595ae0047b8796
+    name: helm-ingress-example
+    urls:
+    - https://kmadhugit.github.io/helm-repository/helm-ingress-example-0.1.tgz
+    version: "0.1"
+generated: 2019-02-07T13:24:09.896939+05:30
